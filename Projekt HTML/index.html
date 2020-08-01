@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl"><!--Język strony-->
+    <head>
+        <meta charset="utf-8"><!--Wybrany zestaw znaków-->
+        <meta name="descrption" content="To jest nasz perwszy projekt"><!--Nazwa i zawartość strony-->
+        <title>Nasz projekt</title><!--Tytuł strony wyświetlany na karcie-->
+        <link rel="stylesheet" href="mojestyle.css"><!--CSS jako zewnętrzny plik - 3. metoda osadzania CSS-->
+        <style>
+            body{
+                background-color: grey;
+            }
+        </style><!--CSS jako tag <style> w head - 2. metoda osadzania CSS-->
+        <script src="mojeskrypty_JS.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="tytul">HTML</h1> <!-- #tytul - odniesienie się do danego id taga-->
+            <!--id o tej samej nazwie wystepuje tylko raz na stronę-->
+            <h2 class="subtytul">Informacje o html</h2> <!-- .subtytul - odniesienie do danej klasy-->
+            <!--klas o tej samej nazwie może być więcej na stronie-->
+        </header><!--Nagłówek strony. przeciwieństwo "footer"-->
+        <section>
+            <nav>
+                Nawgacja menu
+            </nav><!--Nawigacja na stronie - mapa strony-->
+            <aside style="color: red;"><!--CSS inline dot. tylko jednego elementu - 1. metoda osadzania CSS-->
+                Sidebar
+            </aside>
+            <article>
+                <p>HTML pozwala &lt;opisać strukturę &nbsp;informacji 
+                    zawartych wewnątrz strony internetowej, 
+                    nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom 
+                    tekstu – formując hiperłącza, akapity, nagłówki, 
+                    listy – oraz osadza w tekście dokumentu obiekty 
+                        plikowe np. multimedia bądź elementy baz danych 
+                        np. interaktywne formularze danych.
+                </p><!--Paragraf-->
+                <ul>
+                    <li>Pierwszy</li>
+                    <li>Drugi</li>
+                    <li>Trzeci</li>
+                    <li>Czwarty</li>
+                </ul><!--"ul" z ang. unordered list czyli lista nieuporządkowana, 
+                    wypunktowanie, wypunktowane będzie wszystko, co podamy 
+                    w znacznikach <li></li> czyli list item-->
+                <ol type="I" start="3">
+                    <li>Pierwszy</li>
+                    <li>Drugi</li>
+                    <li>Trzeci</li>
+                    <li>Czwarty</li>
+                </ol><!--"ol" z ordered list czyli lista uporządkowana, numeracja
+                atrybut "type" modyfikuje typ numeracji:
+                "1" - domyślna numeracja liczbami arabskimi
+                "I" - numeracja wielkimi liczbami rzymskimi
+                "i" - numeracja małymi liczbami rzymskimi
+                "a" - numeracja małymi literami
+                "A" - numeracja wielkimi literami
+                atrybut "start" modyfikuje początkowy numer listy i jest zawsze liczbą, 
+                nawet jeśli numerowanie następuje za pomocą liter-->
+                <dl>
+                    <dt>Chrome</dt><dd>To przegl&aogon;darka Google'a</dd>
+                    <dt>Opera</dt><dd>To przegl&aogon;darka Opery Software ASA</dd>
+                    <dt>Edge</dt><dd>To przegl&aogon;darka Microsoftu</dd>
+                </dl><!--"dl" z ang. dictionary list czyli lista/spis słownikowa
+                     - zawiera termin "dt" (definition term) 
+                     oraz jego definicję/opis "dd" (definition description)
+                    Jedna defincja może mieć kilka opisów, czyli na jeden "dt" może przypaść więcej "dd"-->
+                <a href="http://search.google.com" target="_blank">Kliknij tutaj!</a>
+                <!--Link, atrybut "target" steruje tym, jak odpalamy linka - 
+                "_self" to odpalenia linka na tej samej karcie 
+                "_blank" to odpalenie linka na nowej karcie--><br><!--"br" czyli break - łamanie linijki-->
+                <a href="omnie.html,,," target="_blank">Kliknij tutaj!</a>
+                <p> &amp; HTML umożliwia 
+                    określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie kaskadowych arkuszy stylów.
+                </p><!--Paragraf-->
+                <img src="Zdjecia/HTML_Logo.png" height="256" title="Jest to logo HTML" alt="Logo HTML"><!--Zdjęcie na stronie-->
+
+            </article><!--Artykuł - zawartość która może istnieć bez całej reszty strony. 
+                Odpowiednik obiektu w obiektowych językach programowania-->
+                <div>HTML pozwala &lt;opisać strukturę &nbsp;informacji 
+                    zawartych wewnątrz strony internetowej, 
+                    nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom 
+                    tekstu – formując hiperłącza, akapity, nagłówki, 
+                    listy – oraz osadza w tekście dokumentu obiekty 
+                        plikowe np. multimedia bądź elementy baz danych 
+                        np. interaktywne formularze danych.
+                </div><!--Kontener, obiekt-->
+            <footer>
+                &copy; &trade; Nasza firma
+            </footer><!--Stopka, przeciwieństwo "header"-->
+        </section><!--Sekcja-->    
+    </body>
+
+</html>
