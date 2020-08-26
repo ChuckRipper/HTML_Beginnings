@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="descrption" content="To jest nasz perwszy projekt">
+        <meta name="keywords" content="HTML, CSS, JS, PHP, Python, Django, Angular, React, NativeScript">
+        <meta name="revised" content="Czaro,08/11/20">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d0496d243.js" crossorigin="anonymous"></script>
+        <title id="aboutme_page_title">O mnie</title>
+        <link rel="stylesheet" href="mojestyle.css">
+    </head>
+    <body>
+        <a href="index.html">Powr&oacute;&cacute;</a>
+        <p id="header_3">Nasz pierwszy formularz</p>
+        <form action="">
+            <label id="fname_label">Imi&eogon;</label><input type="text" id="fname" name="Imie" maxlength="20" placeholder="Imię"><br>
+            <label id="lname_label">Nazwisko</label><input type="text" id="lname" name="Nazwisko" maxlength="40" placeholder="Nazwisko"><br>
+            <label id="age_label">Wiek</label><input type="number" id="age" name="Wiek" min="0" max="100" placeholder="Oby 18+"><br>
+            <label id="aboutme_label">Napisz co&sacute; o sobie</label><textarea type="text" id="lname" name="OwnDescription" maxlength="200" placeholder="No &sacute;wietnie, teraz musz&eogon; si&eogon; spowiada&cacute;..." wrap="hard"></textarea><br>
+            <!--"input" tworzy pole formularza
+            atrybut "type" ustala typ "wejścia":
+                "button" - przycisk
+                "checkbox" - pole wyboru
+                "date" - data
+                "email" - adres e-mail
+                "file" - plik
+                "image" - obraz
+                "number" - liczba
+                "password" - hasło (zagwiazdkowany ciąg znaków)
+                "text" - tekst (domyślna wartość)
+                "url" - adres URL
+            atrybut "id" to przypisanie pola do zmiennej, 
+            którą będziemy mogli użyć np. w skryptach js lub php
+            atrybut "name" to po prostu nazwa pola
+            atrybuty "min" i "max" to odpowiednio minimalna i maksymalna
+            możliwa do uzyskania wartość danego pola liczbowego
+            atrybuty "minlength" i "maxlength" to odpowiednio 
+            minimalna i maksymalna długość ciągu znakowego
+            atrybut "pattern" - to wyrażenie regularne reprezentujące postać wpisywanego rekordu
+            atrybut "placeholder" to krótka wskazówka opisująca oczekiwaną wartość pola "input"
+            jest widoczna w polu input na szaro, póki to pole jest puste
+            atrybut "required" to zaznaczenie że pole jest wymagane do wypełnienia i nie można go pominąć
+            "label" to etykieta, czyli pole tekstowe)-->
+            <select id="scroll_list">
+                <option value="1" id="option_1">Jeden</option><!--Rekord listy rozwijalnej-->
+                <option value="2" id="option_2">Dwa</option>
+                <option value="3" id="option_3">Trzy</option>
+                <option value="4" id="option_4">Cztery</option>
+                <option value="5" id="option_5">Pi&eogon;&cacute;</option>
+            </select><!--Pole z listą rozwijalną w formularzu--><br>
+            <label id="disclaimer">Wyra&zdot;am zgod&eogon; na obci&aogon;&zdot;enie mojego rachunku<br> i puszczenie mnie z torbami.</label><input type="checkbox" id="bankrupcy" name="ZgodaBankructwo"><br>
+            <label class="radio_control_label">Imi&eogon;</label><input type="radio" id="option1" name="Opcja"><br>
+            <label class="radio_control_label">Imi&eogon;</label><input type="radio" id="option2" name="Opcja"><br>
+            <label class="radio_control_label">Imi&eogon;</label><input type="radio" id="option3" name="Opcja"><br><!--Radio to kontrolka podobna do checkboxa z tym że ma kształt koła
+                 i można zaznaczyć tylko jedną z dostępnych opcji, które mają dokładnie ten sam atrybut "name"-->
+            <button id="form_send">Wy&sacute;lij!</button>
+            <!--"button" czyli po prostu przycisk
+            atrybut "disabled" powoduje że na wejściu przycisk nie jest dostępny
+            (można to zmienić w skrypcie JS, PHP)
+            atrybut "name" - wiadomo nazwa
+            atrybut "type" - typ przycisku:
+                "button" - po prostu przycisk
+                "reset" - reset, wyczyszczenie formularza
+                "submit" - zakończenie wypełniania formularza 
+                i wysyłka podanych danych
+            -->
+        </form>
+        <!--"form" to obiekt typu Formularz
+        atrybut "action" to po prostu skutek działania formularza, tj. adres URL, gdzie wysyłamy dane po wypełnieniu formularza, zwykle dotyczy skryptu PHP lub JS
+        atrybut "autocomplete" to włączenie/wyłączenie autouzupełniania formularza
+        atrybut "method" wskazuje na sposób przekazywania danych z formularza:
+            "get" - Metoda GET powinna być stosowana tam, gdzie dane odwołanie powinno być adresowalne, 
+            to znaczy gdy w URI może być przechowywany pewien stan aplikacji, stały w czasie, 
+            do którego użytkownik mógłby chcieć wrócić (np. pozycja na mapie). 
+            Strony dostępne przez metodę GET powinny być bezpieczne dla osoby odwiedzającej (ang. safe interactions), 
+            tzn. nie powinny wywoływać wiążących dla niej skutków (np. zapisanie na listę dyskusyjną).
+            Metoda ta często pojawia się w wyszukiwarkach z filtrem - po prostu do adresu URL dochodza pewne pary parametr=wartość, więc modyfikuje się adres strony.
+            "post" - Metoda POST powinna być stosowana tam, gdzie dane odwołanie jest formą interakcji z użytkownikiem, 
+            niemożliwą do utrwalenia w formie adresu. 
+            Powinna być także stosowana tam, gdzie dana operacja może wywołać wiążące dla użytkownika skutki – np. zapisanie na listę dyskusyjną.
+        atrybut "rel" okresla zależnośc pomiędzy obecnym dokumentem a zasobami, do których się odnosi. 
+            Możliwe wartości: "external", "help", "license", "next", "nofollow", "noopener", "noreferrer", "opener", "prev", "search"
+        atrybut "target" ma dokładnie to samo znaczenie co wcześniej, tj. efekt jaki nastapi po wysłaniu danych z formularza.
+            Mozliwe wartości: "_blank" (przejście do nowej karty), "_self" (kontynuacja na tej samej karcie), 
+            "_parent" (przejście do poprzednio używanej ramki, wyżej w hierarchii), "_top" (odpowiedź wyświetlana w głównym oknie, zamknięcie wszelkich ramek)-->
+
+    </body>
+    <script type="text/javascript" src="mojeskrypty_JS.js"></script><!-- JS jako zewnętrzny plik - najpopularniejsza metoda osadzania JS -->
+    <script src="https://kit.fontawesome.com/6d0496d243.js" crossorigin="anonymous"></script>
+</html>

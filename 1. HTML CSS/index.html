@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pl"><!--Język strony-->
+    <head>
+        <meta charset="utf-8"><!--Wybrany zestaw znaków-->
+        <meta name="descrption" content="To jest nasz perwszy projekt"><!--Nazwa i zawartość strony-->
+        <meta name="keywords" content="HTML, CSS, JS, PHP, Python, Django, Angular, React, NativeScript">
+        <meta name="revised" content="Czaro,08/11/20">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d0496d243.js" crossorigin="anonymous"></script>
+        <title id="main_page_title">Nasz projekt</title><!--Tytuł strony wyświetlany na karcie-->
+        <link rel="stylesheet" href="mojestyle.css"><!--CSS jako zewnętrzny plik - 3. metoda osadzania CSS-->
+        <link id="favicon" rel="icon" href="icons/HTML5_CSS3.gif">
+        <!-- <style>
+            body{
+                background-color: grey;
+            }
+        </style>--><!--CSS jako tag <style> w head - 2. metoda osadzania CSS -->
+
+    </head>
+    <body>
+        <header id="header_1">
+            <div class="panel_section alt_panel" style="grid-column: 1 / 5;">1</div>
+            <div class="panel_section alt_panel" style="grid-row: 2 / 4;">2</div>
+            <div class="panel_section">3</div>
+            <div class="panel_section">4</div>
+            <div class="panel_section alt_panel">5</div>
+            <div class="panel_section">6</div>
+            <div class="panel_section">7</div>
+            <div class="panel_section">8</div>
+        </header>
+        <header id="header_2">   
+            <p id="title_1">HTML wielki tytu&lstrok;</p> <!-- #tytul - odniesienie się do danego id taga-->
+            <!--id o tej samej nazwie wystepuje tylko raz na stronę-->
+            <p id="title_2">HTML wielki tytu&lstrok;</p> <!-- #tytul - odniesienie się do danego id taga-->
+            <!--id o tej samej nazwie wystepuje tylko raz na stronę-->
+            <p id="title_3">Ale odpierdalasz człowieku!</p> <!-- #tytul - odniesienie się do danego id taga-->
+            <!--id o tej samej nazwie wystepuje tylko raz na stronę-->
+
+        </header><!--Nagłówek strony. przeciwieństwo "footer"-->
+        <div>
+            &nbsp;
+        </div>
+        <section id="section_1">
+            <nav class="navigation">Nawigacja menu<br>
+                <!--<i class="fas fa-home" id="icon_home"></i>--><i class="fas fa-home"></i><a href="index.html" target="_blank" class="url_link">Strona g&lstrok;&oacute;wna</a><br>
+                <!--<i class="fab fa-google" id="icon_google"></i>--><i class="fab fa-google"></i><a href="http://search.google.com" target="_blank" class="url_link">Wyszukiwarka Google</a>
+                <!--Link, atrybut "target" steruje tym, jak odpalamy linka - 
+                "_self" to odpalenia linka na tej samej karcie 
+                "_blank" to odpalenie linka na nowej karcie--><br><!--"br" czyli break - łamanie linijki-->
+                <!--<i class="fas fa-smile-wink" id="icon_aboutme"></i>--><i class="fas fa-smile-wink"></i><a href="omnie.html" target="_blank" class="url_link">Strona o mnie</a>
+            </nav><!--Nawigacja na stronie - mapa strony-->
+            <aside class="aside_panel"><!--style="color: red;"--><!--CSS inline dot. tylko jednego elementu - 1. metoda osadzania CSS-->
+                Sidebar
+                <div id="test_transition">TEST transition</div>
+                <p id="title_4">Informacje o html</p> <!-- .subtytul - odniesienie do danej klasy-->
+                <!--klas o tej samej nazwie może być więcej na stronie-->
+                <div id="cien1">
+                    Z  cieniem
+                </div>
+            </aside>
+            <br><br><article class="article">
+                <p id="article_1">HTML pozwala &lt;opisać strukturę &nbsp;informacji 
+                    zawartych wewnątrz strony internetowej, 
+                    nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom 
+                    tekstu – formując hiperłącza, akapity, nagłówki, 
+                    listy – oraz osadza w tekście dokumentu obiekty 
+                        plikowe np. multimedia bądź elementy baz danych 
+                        np. interaktywne formularze danych.
+                </p><!--Paragraf-->
+                <ul class="unordered_list">
+                    <li class="unordered_list_item">Pierwszy</li>
+                    <li class="unordered_list_item">Drugi</li>
+                    <li class="unordered_list_item">Trzeci</li>
+                    <li class="unordered_list_item">Czwarty</li>
+                </ul><!--"ul" z ang. unordered list czyli lista nieuporządkowana, 
+                    wypunktowanie, wypunktowane będzie wszystko, co podamy 
+                    w znacznikach <li></li> czyli list item-->
+                <ol class="orderd_list" type="I" start="3">
+                    <li class="ordered_list_item">Pierwszy</li>
+                    <li class="ordered_list_item">Drugi</li>
+                    <li class="ordered_list_item">Trzeci</li>
+                    <li class="ordered_list_item">Czwarty</li>
+                </ol><!--"ol" z ordered list czyli lista uporządkowana, numeracja
+                atrybut "type" modyfikuje typ numeracji:
+                "1" - domyślna numeracja liczbami arabskimi
+                "I" - numeracja wielkimi liczbami rzymskimi
+                "i" - numeracja małymi liczbami rzymskimi
+                "a" - numeracja małymi literami
+                "A" - numeracja wielkimi literami
+                atrybut "start" modyfikuje początkowy numer listy i jest zawsze liczbą, 
+                nawet jeśli numerowanie następuje za pomocą liter-->
+                <dl class="dictionary_list">
+                    <dt class="dictionary_list_termitem">Chrome</dt><dd class="dictionary_list_defitem">To przegl&aogon;darka Google'a</dd>
+                    <dt class="dictionary_list_termitem">Opera</dt><dd class="dictionary_list_defitem">To przegl&aogon;darka Opery Software ASA</dd>
+                    <dt class="dictionary_list_termitem">Edge</dt><dd class="dictionary_list_defitem">To przegl&aogon;darka Microsoftu</dd>
+                </dl><!--"dl" z ang. dictionary list czyli lista/spis słownikowa
+                     - zawiera termin "dt" (definition term) 
+                     oraz jego definicję/opis "dd" (definition description)
+                    Jedna defincja może mieć kilka opisów, czyli na jeden "dt" może przypaść więcej "dd"-->
+                
+                <p> &amp; HTML umożliwia 
+                    określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie kaskadowych arkuszy stylów.
+                </p><!--Paragraf-->
+                <img src="Zdjecia/HTML_Logo.png" class="image" height="256" title="Jest to logo HTML" alt="Logo HTML"><!--Zdjęcie na stronie-->
+
+            </article><!--Artykuł - zawartość która może istnieć bez całej reszty strony. 
+                Odpowiednik obiektu w obiektowych językach programowania-->
+                <div>HTML pozwala &lt;opisać strukturę &nbsp;informacji 
+                    zawartych wewnątrz strony internetowej, 
+                    nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom 
+                    tekstu – formując hiperłącza, akapity, nagłówki, 
+                    listy – oraz osadza w tekście dokumentu obiekty 
+                        plikowe np. multimedia bądź elementy baz danych 
+                        np. interaktywne formularze danych.
+                </div><!--Kontener, obiekt-->
+            <footer class="footer">
+                &copy; &trade; Nasza firma
+            </footer><!--Stopka, przeciwieństwo "header"-->
+        </section><!--Sekcja-->
+        <section id="section_2">
+            <dialog class="dialog">
+                <button id="button_1">
+                     abc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                </button>
+            </dialog>
+            <details class="details">
+                <summary id="summary_1">
+                    <p id="paragraph_1">
+                        def
+                    </p>
+                </summary>
+            </details>
+        </section> 
+    </body>
+    <script type="text/javascript" src="mojeskrypty_JS.js"></script><!-- JS jako zewnętrzny plik - najpopularniejsza metoda osadzania JS -->
+    
+    <!-- Źródło specjalnych symboli i grafik do czcionek z wyłączonym sprawdzaniem ich pochodzenia (atrybut crossorigin="anonyomus")
+    Atrybut crossorigin dotycy elementów audio, img oraz video. -->
+</html>

@@ -1,0 +1,138 @@
+
+body {
+    --main-color: rgb(107, 4, 4);
+}
+
+#article {
+    width: 250px;
+}
+
+#article_1 {
+    border: 5px solid var(--main-color);
+    border-style: double;
+    padding: 50px 30px 50px 100px;
+    width: 50%;
+    background-image: radial-gradient(var(--main-color) 10%, yellow 30%, green 60%);
+}
+
+aside #cien1 {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px var(--main-color), -10px -10px 5px blue;
+    border-radius: 50%;
+    float: left;
+    clear: both;
+}
+
+img {
+    float: left;
+}
+
+#main_page_title {
+    font-family: 'Courier New', monospace;
+}
+
+.navigation {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--main-color);
+    }
+
+#header_1 {
+        display: grid;
+        height: 300px;
+        border: 2px solid blue;
+        grid-gap: 10px;
+        grid-template-columns: auto 100px auto auto;
+        grid-template-rows: auto 100px;
+}
+
+.panel_section {
+
+    background-color: royalblue;
+    border: 2px solid var(--main-color);
+}
+
+.alt_panel {
+    background-color: coral;
+    border: 2px solid var(--main-color);
+}
+
+@keyframes exemplar_animation {
+    0% {background-color: var(--main-color); width: 100px; height: 100px;}
+    50% {background-color: yellow; width: 100px; height: 100px;}
+    100% {background-color: green; width: 200px; height: 100px;}
+}
+
+#test_transition {
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    transition: width 2s ease-in-out 1s, height 2s, background-color 2s;
+
+}
+
+#test_transition:hover {
+    animation-name: exemplar_animation;
+    animation-duration: 4s;
+}
+
+#title_1 { 
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #d12684;
+    text-shadow: 5px 5px 2px rgb(5, 75, 5);
+    float: left;
+    clear: both;
+}
+
+#title_2 {
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    color: rgba(100%, 0%, 0%, 0.7);/* - RGB z obsługa przezroczystości (a - alpha, w przedziale od 0 (niewidoczny) do 1 (całkowicznie widoczny)) */
+    /* font-variant: small-caps; */
+    /* font-stretch: unset; */
+}
+
+#title_3 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+
+#title_4 {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+a.url_link:hover {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+    color: green !important;
+} 
+
+a.url_link:visited {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+    color: var(--main-color);
+}
+
+#lname {
+    font-family: Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
